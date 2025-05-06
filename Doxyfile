@@ -1,7 +1,7 @@
 PROJECT_NAME           = "Siggy"
 PROJECT_BRIEF         = "AWS S3 Pre-Signed URL Generator"
 OUTPUT_DIRECTORY      = docs/html
-INPUT                = src/
+INPUT                = README.md src/
 RECURSIVE            = YES
 GENERATE_HTML        = YES
 GENERATE_LATEX       = NO

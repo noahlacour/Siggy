@@ -1,0 +1,23 @@
+# Ignore build artifacts
+/build/
+/CMakeFiles/
+/CMakeCache.txt
+/Makefile
+/*.o
+
+# Ignore user-specific config file
+config/config.ini
+
+# Ignore temporary/editor files
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+
+# Ignore OS junk
+.DS_Store
+Thumbs.db
+
+# Ignore local editor configs
+.vscode/

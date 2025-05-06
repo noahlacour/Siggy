@@ -1,0 +1,15 @@
+PROJECT_NAME           = "Siggy"
+PROJECT_BRIEF         = "AWS S3 Pre-Signed URL Generator"
+OUTPUT_DIRECTORY      = docs
+INPUT                = src/
+RECURSIVE            = YES
+GENERATE_HTML        = YES
+GENERATE_LATEX       = NO
+GENERATE_MAN         = NO
+GENERATE_RTF        = NO
+EXTRACT_ALL          = YES
+EXTRACT_PRIVATE      = YES
+EXTRACT_STATIC       = YES
+USE_MDFILE_AS_MAINPAGE = README.md   
+MARKDOWN_SUPPORT     = YES
+GENERATE_TREEVIEW    = YES

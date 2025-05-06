@@ -10,10 +10,10 @@
 
 <p align="center">
   <a href="LICENSE">
-    <img src="https://img.shields.io/github/license/yourusername/siggy.svg" alt="License">
+    <img src="https://img.shields.io/github/license/noahlacour/Siggy.svg" alt="License">
   </a>
-  <a href="https://github.com/yourusername/siggy/stargazers">
-    <img src="https://img.shields.io/github/stars/yourusername/siggy?style=social" alt="GitHub stars">
+  <a href="https://github.com/noahlacour/Siggy/stargazers">
+    <img src="https://img.shields.io/github/stars/noahlacour/Siggy?style=social" alt="GitHub stars">
   </a>
 </p>
 

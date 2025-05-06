@@ -1,4 +1,21 @@
-# Siggy - AWS S3 Pre-Signed URL Generator
+<p align="center">
+  <img src="assets/siggyLogo.png" alt="Siggy Logo" width="150"/>
+</p>
+
+<h1 align="center">Siggy - AWS S3 Pre-Signed URL Generator</h1>
+
+<p align="center">
+  <em>A minimal C++ CLI tool for managing S3 files and generating secure pre-signed URLs</em>
+</p>
+
+<p align="center">
+  <a href="LICENSE">
+    <img src="https://img.shields.io/github/license/yourusername/siggy.svg" alt="License">
+  </a>
+  <a href="https://github.com/yourusername/siggy/stargazers">
+    <img src="https://img.shields.io/github/stars/yourusername/siggy?style=social" alt="GitHub stars">
+  </a>
+</p>
 
 Siggy is a lightweight C++ command-line tool for interacting with AWS S3 buckets.
 

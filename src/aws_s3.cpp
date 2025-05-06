@@ -9,6 +9,16 @@
 #include <fstream>
 #include <iostream>
 
+// Creates a S3 client object using the configuration parameters.
+std::shared_ptr<Aws::S3::S3Client> create_s3_client(const Config& config)
+{
+    Aws::S3::S3ClientConfiguration s3config;
+    s3config.region = config.region;
+
+    Aws::Auth::AWSCredentials credentials(config.access_key, config.secret_key);
+    return std::make_shared<Aws::S3::S3Client>(credentials, s3config, Aws::Client::AWSAuthV4Signer::PayloadSigningPolicy::Never, false, Aws::S3::US_EAST_1_REGIONAL_ENDPOINT_OPTION::LEGACY);
+}
+
 void list_s3_objects(const Config& config)
 {
     // Initialize the S3 client and prepare the ListObjectsV2 request.
@@ -98,12 +108,3 @@ bool upload_file(const Config& config, const std::string& local_path, const std:
     }
 }
 
-// Creates a S3 client object using the configuration parameters.
-std::shared_ptr<Aws::S3::S3Client> create_s3_client(const Config& config)
-{
-    Aws::Auth::AWSCredentials credentials(config.access_key, config.secret_key);
-    Aws::S3::S3ClientConfiguration s3config;
-    s3config.region = config.region;
-
-    return (std::make_shared<Aws::S3::S3Client>(credentials, s3config));
-}
